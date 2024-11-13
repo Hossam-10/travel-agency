@@ -14,14 +14,6 @@ export default defineNuxtConfig({
       theme: 'none'
     },
   },
-  veeValidate: {
-    autoImports: true,
-    componentNames: {
-      Form: "ValidationForm",
-      Field: "Field",
-      ErrorMessage: "ErrorMessage",
-    },
-  },
   i18n: {
     locales: [
       { code: "ar", language: "ar", dir: "rtl", name: 'العربية' },
