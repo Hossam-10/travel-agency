@@ -1,0 +1,29 @@
+.p-dropdown,
+.p-select,
+.p-multiselect {
+  padding: 16px;
+  box-shadow: unset !important;
+  border: 1px solid #E4E7EB;
+  color: #0B141E;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  &:hover {
+    border-color: #190b97 !important;
+  }
+  &:focus {
+    border-color: #190b97 !important;
+    box-shadow: none !important;
+  }
+  .p-dropdown-trigger-icon {
+    color: #3C434B;
+    font-size: 12px;
+  }
+  .p-select-label{
+    border: none;
+  }
+  .p-select-list-container{
+    border: 1px solid #E4E7EB;
+    background-color: white;
+  }
+}
