@@ -21,12 +21,7 @@ export default defineNuxtConfig({
     defaultLocale: "ar",
     strategy: "prefix",
     lazy: true,
-    detectBrowserLanguage: {
-      useCookie: true,
-      cookieKey: "lang",
-      alwaysRedirect: true,
-      fallbackLocale: "ar",
-    },
+    detectBrowserLanguage: false,
     vueI18n: "./i18n.config.ts",
   },
 });

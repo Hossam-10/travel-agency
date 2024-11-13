@@ -20,6 +20,9 @@ const { setLocale } = useI18n();
 const localCookie = useCookie("lang");
 if (localCookie.value) {
   setLocale(localCookie.value as string & ("en" | "ar"));
+} else {
+  setLocale("ar");
+  localCookie.value = "ar";
 }
 
 //set locale html attributes
