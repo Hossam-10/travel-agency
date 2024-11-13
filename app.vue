@@ -9,7 +9,7 @@
 </template>
 
 <script setup lang="ts">
-import Logo from '~/assets/icons/logo.svg';
+import Logo from "~/assets/icons/logo.svg";
 useHead({
   link: [{ rel: "icon", href: Logo }],
   title: "Goose Flight",
@@ -19,10 +19,7 @@ useHead({
 const { setLocale } = useI18n();
 const localCookie = useCookie("lang");
 if (localCookie.value) {
-  setLocale(localCookie.value as (string & "en") | "ar");
-} else {
-  localCookie.value = "en";
-  setLocale("en");
+  setLocale(localCookie.value as string & ("en" | "ar"));
 }
 
 //set locale html attributes
