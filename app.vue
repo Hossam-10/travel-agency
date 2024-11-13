@@ -9,6 +9,12 @@
 </template>
 
 <script setup lang="ts">
+import Logo from '~/assets/icons/logo.svg';
+useHead({
+  link: [{ rel: "icon", href: Logo }],
+  title: "Goose Flight",
+});
+
 //get locale from cookies and set it to i18n
 const { setLocale } = useI18n();
 const localCookie = useCookie("lang");

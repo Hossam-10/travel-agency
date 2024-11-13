@@ -6,11 +6,12 @@ export default defineNuxtConfig({
     "@primevue/nuxt-module",
     "@vee-validate/nuxt",
     "@nuxtjs/i18n",
+    "@nuxt/image",
   ],
   css: ["primeicons/primeicons.css", "@/assets/styles/main.scss"],
   primevue: {
     options: {
-      theme: "none",
+      theme: 'none'
     },
   },
   veeValidate: {
@@ -23,17 +24,17 @@ export default defineNuxtConfig({
   },
   i18n: {
     locales: [
-      { code: "ar", language: "ar", dir: "rtl" },
-      { code: "en", language: "en", dir: "ltr" },
+      { code: "ar", language: "ar", dir: "rtl", name: 'العربية' },
+      { code: "en", language: "en", dir: "ltr", name: 'English' },
     ],
-    defaultLocale: "en",
+    defaultLocale: "ar",
     strategy: "prefix",
     lazy: true,
     detectBrowserLanguage: {
       useCookie: true,
       cookieKey: "lang",
       alwaysRedirect: true,
-      fallbackLocale: "en",
+      fallbackLocale: "ar",
     },
     vueI18n: "./i18n.config.ts",
   },

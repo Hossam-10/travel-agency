@@ -6,6 +6,9 @@ export default {
         primary: {
           DEFAULT: "#EAA121",
         },
+        gray: {
+          600: '#636363'
+        }
       },
     },
   },
