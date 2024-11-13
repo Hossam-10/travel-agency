@@ -1,75 +1,21 @@
-# Nuxt Minimal Starter
 
-Look at the [Nuxt documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
+# GooseFlight Travel Agency Website
 
-## Setup
+GooseFlight is a comprehensive travel agency website built primarily with **Nuxt** and **Vue**. This application focuses on providing a seamless, multilingual experience for users, with an emphasis on ease of navigation and modern design. Below are key highlights of the project setup and functionality.
 
-Make sure to install dependencies:
+## Tech Stack
 
-```bash
-# npm
-npm install
+- **Nuxt.js**: The backbone of the project, providing a powerful SSR setup for Vue and enabling dynamic routes and server-side rendering.
+- **Vue.js**: Framework for building the core front-end user interfaces.
+- **Tailwind CSS**: For rapid and responsive styling throughout the site.
+- **PrimeVue**: Offers a wide variety of customizable UI components to streamline development.
+- **Nuxt-i18n**: Supports multilingual capabilities, making it easy to switch languages.
+- **Nuxt Image**: Ensures optimized image handling across different devices and improves website performance.
 
-# pnpm
-pnpm install
+## Language and Localization
 
-# yarn
-yarn install
+### Default Language
+- The default language for the GooseFlight website is **Arabic**. This choice reflects the primary target audience and ensures that users initially see content in Arabic.
 
-# bun
-bun install
-```
-
-## Development Server
-
-Start the development server on `http://localhost:3000`:
-
-```bash
-# npm
-npm run dev
-
-# pnpm
-pnpm dev
-
-# yarn
-yarn dev
-
-# bun
-bun run dev
-```
-
-## Production
-
-Build the application for production:
-
-```bash
-# npm
-npm run build
-
-# pnpm
-pnpm build
-
-# yarn
-yarn build
-
-# bun
-bun run build
-```
-
-Locally preview production build:
-
-```bash
-# npm
-npm run preview
-
-# pnpm
-pnpm preview
-
-# yarn
-yarn preview
-
-# bun
-bun run preview
-```
-
-Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
+### Language Preference
+- **Persistent Language Selection**: If a user changes the language, their preference is saved in a cookie. This enables the website to open in the selected language upon their return, improving the user experience for multilingual visitors.
