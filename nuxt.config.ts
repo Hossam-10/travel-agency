@@ -4,7 +4,6 @@ export default defineNuxtConfig({
   modules: [
     "@nuxtjs/tailwindcss",
     "@primevue/nuxt-module",
-    "@vee-validate/nuxt",
     "@nuxtjs/i18n",
     "@nuxt/image",
   ],
